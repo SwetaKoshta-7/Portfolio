@@ -118,35 +118,35 @@ document.addEventListener("DOMContentLoaded", () => {
 // Continuous Shooting Stars
 // =====================================
 
-// function createStar() {
+function createStar() {
 
-//     const star = document.createElement("div");
-//     star.className = "shooting-star";
+    const star = document.createElement("div");
+    star.className = "shooting-star";
 
-//     // Start somewhere in the upper 60% of the screen
-//     star.style.left = (Math.random() * window.innerWidth) + "px";
-//     star.style.top = (Math.random() * window.innerHeight * 0.6) + "px";
+    // Start somewhere in the upper 60% of the screen
+    star.style.left = (Math.random() * window.innerWidth) + "px";
+    star.style.top = (Math.random() * window.innerHeight * 0.6) + "px";
 
-//     // Random tail length
-//     star.style.width = (120 + Math.random() * 180) + "px";
+    // Random tail length
+    star.style.width = (120 + Math.random() * 180) + "px";
 
-//     // Random speed
-//     star.style.animationDuration = (1.2 + Math.random() * 1.3) + "s";
+    // Random speed
+    star.style.animationDuration = (1.2 + Math.random() * 1.3) + "s";
 
-//     // Random brightness
-//     star.style.opacity = (0.6 + Math.random() * 0.4);
+    // Random brightness
+    star.style.opacity = (0.6 + Math.random() * 0.4);
 
-//     // Slightly different angles
-//     const angle = -25 + Math.random() * 20;
-//     star.style.setProperty("--angle", angle + "deg");
+    // Slightly different angles
+    const angle = -25 + Math.random() * 20;
+    star.style.setProperty("--angle", angle + "deg");
 
-//     bg.appendChild(star);
+    bg.appendChild(star);
 
-//     star.addEventListener("animationend", () => {
-//         star.remove();
-//     });
+    star.addEventListener("animationend", () => {
+        star.remove();
+    });
 
-// }
+}
 
 // Create a new star every 700ms
 setInterval(createStar, 700);
@@ -178,7 +178,7 @@ setInterval(() => {
 
 }, 4000 + Math.random() * 3000);
 
-    setInterval(createStar, 5000);
+    // setInterval(createStar, 5000);
 
 });
 
