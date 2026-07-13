@@ -112,13 +112,23 @@ Download Resume
 <script>
 
 function openResume(){
-document.getElementById("resumePopup").style.display="flex";
-document.getElementById("resumeViewer").src="sweta_resume.pdf";
+
+    const popup = document.getElementById("resumePopup");
+
+    popup.classList.add("show");
+
+    document.getElementById("resumeViewer").src = "sweta_resume.pdf";
+
 }
 
 function closeResume(){
-document.getElementById("resumePopup").style.display="none";
-document.getElementById("resumeViewer").src="";
+
+    const popup = document.getElementById("resumePopup");
+
+    popup.classList.remove("show");
+
+    document.getElementById("resumeViewer").src = "";
+
 }
 
 </script>
